@@ -67,7 +67,7 @@ class OperaURLProvider(URLGetter):
         for link in links:
             if ".dmg" in link:
                 url += link
-        return url, version
+        return url, str(latest)
 
     def main(self):
         """Find and return a download URL"""
